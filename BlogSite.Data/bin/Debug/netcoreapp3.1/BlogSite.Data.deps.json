@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BlogSite.Data/1.0.0": {
+        "runtime": {
+          "BlogSite.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BlogSite.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
