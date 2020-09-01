@@ -18,7 +18,7 @@ namespace Membership.Services
             ILogger<SignInManager<ApplicationUser>> logger, 
             IAuthenticationSchemeProvider schemes,
             IUserConfirmation<ApplicationUser> userConfirmation)
-            : base(userManager, contextAccessor, claimsFactory, optionsAccessor, logger, schemes)
+            : base(userManager, contextAccessor, claimsFactory, optionsAccessor, logger, schemes, userConfirmation)
         {
         }
     }

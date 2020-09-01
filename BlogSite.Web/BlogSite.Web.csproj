@@ -25,4 +25,9 @@
     <Folder Include="wwwroot\admin\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BlogSite.Framework\BlogSite.Framework.csproj" />
+    <ProjectReference Include="..\Membership\Membership.csproj" />
+  </ItemGroup>
+
 </Project>

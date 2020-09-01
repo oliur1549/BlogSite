@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogSite.Framework", "BlogS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogSite.Data", "BlogSite.Data\BlogSite.Data.csproj", "{31C02BFB-2CB8-4509-9B0D-CDE00902E267}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership", "Membership\Membership.csproj", "{A002F68B-2BA7-42D4-B9D8-AB1F038F9847}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Membership", "Membership\Membership.csproj", "{35E521FE-401E-47A7-B130-2BEFC36B9D6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{31C02BFB-2CB8-4509-9B0D-CDE00902E267}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31C02BFB-2CB8-4509-9B0D-CDE00902E267}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31C02BFB-2CB8-4509-9B0D-CDE00902E267}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A002F68B-2BA7-42D4-B9D8-AB1F038F9847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A002F68B-2BA7-42D4-B9D8-AB1F038F9847}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A002F68B-2BA7-42D4-B9D8-AB1F038F9847}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A002F68B-2BA7-42D4-B9D8-AB1F038F9847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E521FE-401E-47A7-B130-2BEFC36B9D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E521FE-401E-47A7-B130-2BEFC36B9D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E521FE-401E-47A7-B130-2BEFC36B9D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E521FE-401E-47A7-B130-2BEFC36B9D6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,6 +4,6 @@ E:\My Projects\BlogSite.Web\BlogSite.Data\bin\Debug\netcoreapp3.1\BlogSite.Data.
 E:\My Projects\BlogSite.Web\BlogSite.Data\obj\Debug\netcoreapp3.1\BlogSite.Data.csprojAssemblyReference.cache
 E:\My Projects\BlogSite.Web\BlogSite.Data\obj\Debug\netcoreapp3.1\BlogSite.Data.AssemblyInfoInputs.cache
 E:\My Projects\BlogSite.Web\BlogSite.Data\obj\Debug\netcoreapp3.1\BlogSite.Data.AssemblyInfo.cs
-E:\My Projects\BlogSite.Web\BlogSite.Data\obj\Debug\netcoreapp3.1\BlogSite.Data.csproj.CoreCompileInputs.cache
 E:\My Projects\BlogSite.Web\BlogSite.Data\obj\Debug\netcoreapp3.1\BlogSite.Data.dll
 E:\My Projects\BlogSite.Web\BlogSite.Data\obj\Debug\netcoreapp3.1\BlogSite.Data.pdb
+E:\My Projects\BlogSite.Web\BlogSite.Data\obj\Debug\netcoreapp3.1\BlogSite.Data.csproj.CoreCompileInputs.cache

@@ -1,0 +1,12 @@
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\bin\Debug\netcoreapp3.1\EMS.Membership.deps.json
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\bin\Debug\netcoreapp3.1\EMS.Membership.dll
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\bin\Debug\netcoreapp3.1\EMS.Membership.pdb
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\bin\Debug\netcoreapp3.1\EMS.Data.dll
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\bin\Debug\netcoreapp3.1\EMS.Data.pdb
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\obj\Debug\netcoreapp3.1\EMS.Membership.csprojAssemblyReference.cache
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\obj\Debug\netcoreapp3.1\EMS.Membership.AssemblyInfoInputs.cache
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\obj\Debug\netcoreapp3.1\EMS.Membership.AssemblyInfo.cs
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\obj\Debug\netcoreapp3.1\EMS.Membership.csproj.CoreCompileInputs.cache
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\obj\Debug\netcoreapp3.1\EMS.Membership.csproj.CopyComplete
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\obj\Debug\netcoreapp3.1\EMS.Membership.dll
+E:\My Projects\TeamWork\Email-Marketing-System\EMS.Membership\obj\Debug\netcoreapp3.1\EMS.Membership.pdb
