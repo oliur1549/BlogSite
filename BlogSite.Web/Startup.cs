@@ -16,6 +16,9 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Membership.Data;
 using BlogSite.Framework;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Membership.BusinessObjects;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BlogSite.Web
 {
@@ -88,19 +91,44 @@ namespace BlogSite.Web
                 options.User.RequireUniqueEmail = false;
             });
 
-            services.AddAuthentication()
-                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
-                {
-                    options.LoginPath = new PathString("/Account/Login");
-                    options.AccessDeniedPath = new PathString("/Account/Login");
-                    options.LogoutPath = new PathString("/Account/Logout");
-                    options.Cookie.Name = "CustomerPortal.Identity";
-                    options.SlidingExpiration = true;
-                    options.ExpireTimeSpan = TimeSpan.FromDays(1);
-                });
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Accounts/Login";
+            });
+
+            //services.AddAuthentication()
+            //    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+            //    {
+            //        options.LoginPath = new PathString("/Accounts/Login");
+            //        options.AccessDeniedPath = new PathString("/Accounts/Login");
+            //        options.LogoutPath = new PathString("/Accounts/Logout");
+            //        options.Cookie.Name = "Customer";
+            //        options.SlidingExpiration = true;
+            //        options.ExpireTimeSpan = TimeSpan.FromDays(1);
+            //    });
+            //services.AddAuthorization(options =>
+            //{
+            //    options.AddPolicy("RequireImage", policy =>
+            //    {
+            //        policy.AuthenticationSchemes.Clear();
+            //        policy.AuthenticationSchemes.Add(CookieAuthenticationDefaults.AuthenticationScheme);
+            //        policy.RequireAuthenticatedUser();
+            //        policy.Requirements.Add(new ImageRequirement());
+            //    });
+            //    options.AddPolicy("RestrictedArea", policy =>
+            //    {
+            //        policy.RequireAuthenticatedUser();
+            //        policy.Requirements.Add(new AgeRequirement());
+            //    });
+            //});
+
+            //services.AddSingleton<IAuthorizationHandler, ImageRequirementHandler>();
+            //services.AddSingleton<IAuthorizationHandler, AgeRequirementHandler>();
 
             services.AddControllersWithViews();
+            services.AddHttpContextAccessor();
             services.AddRazorPages();
+            services.AddOptions();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
