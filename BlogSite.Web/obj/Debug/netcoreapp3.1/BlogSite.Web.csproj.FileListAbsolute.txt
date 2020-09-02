@@ -71,7 +71,6 @@ E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.Ra
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.TagHelpers.input.cache
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.TagHelpers.output.cache
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.RazorCoreGenerate.cache
-E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -171,6 +170,16 @@ E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\Autofac.Extensi
 E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\Serilog.dll
 E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
 E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\Serilog.Sinks.RollingFile.dll
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\Membership.dll
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\Membership.pdb
+E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Login\Index.cshtml.g.cs
+E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\BlogSite.Data.dll
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\BlogSite.Data.pdb
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\BlogSite.Framework.dll
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\BlogSite.Framework.pdb
+E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Views\Accounts\Login.cshtml.g.cs
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.csproj.CoreCompileInputs.cache
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cs
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cache
