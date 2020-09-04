@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using BlogSite.Framework.AdminPanelBS;
 using Membership.Data;
 using Membership.Services;
 
@@ -22,6 +23,8 @@ namespace BlogSite.Framework
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
                 .InstancePerLifetimeScope();
 
+            builder.RegisterType<APService>().As<IAPService>()
+               .InstancePerLifetimeScope();
 
             builder.RegisterType<AccountSeed>()
                 .InstancePerLifetimeScope();

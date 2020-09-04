@@ -45,7 +45,7 @@ namespace BlogSite.Web
 
             //builder.RegiserModule(new ContextModule(connectionString, migrationAssemblyName));
             builder.RegisterModule(new FrameworkModule(connectionString, migrationAssemblyName));
-            //builder.RegisterModule(new WebModule(connectionString, migrationAssemblyName));
+            builder.RegisterModule(new WebModule(connectionString, migrationAssemblyName));
         }
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -124,7 +124,12 @@ namespace BlogSite.Web
 
             //services.AddSingleton<IAuthorizationHandler, ImageRequirementHandler>();
             //services.AddSingleton<IAuthorizationHandler, AgeRequirementHandler>();
-
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();
             services.AddRazorPages();
@@ -154,7 +159,7 @@ namespace BlogSite.Web
 
             app.UseAuthentication();
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

@@ -160,8 +160,6 @@ E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\ru\Microsoft.Co
 E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_adminLayout.cshtml.g.cs
-E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_LoginPartial.cshtml.g.cs
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
@@ -183,3 +181,13 @@ E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\Microsoft.AspNe
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.csproj.CoreCompileInputs.cache
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cs
 E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cache
+E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminPanel\Index.cshtml.g.cs
+E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_ActionMessage.cshtml.g.cs
+E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_LeftMenu.cshtml.g.cs
+E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
+E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminPanel\EditAdmin.cshtml.g.cs
+E:\My Projects\BlogSite.Web\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\AdminPanel\AddAdmin.cshtml.g.cs
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\My Projects\BlogSite.Web\BlogSite.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
