@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlogSite.Framework.CategoryBS;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -14,5 +15,6 @@ namespace BlogSite.Framework.BlogBS
         void Editblog(Blog blog);
         Blog Getblog(int id);
         Blog Deleteblog(int id);
+        IEnumerable<Category> GetCategories();
     }
 }

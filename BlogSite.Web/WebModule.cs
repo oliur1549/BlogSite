@@ -1,5 +1,8 @@
 ﻿using Autofac;
+using BlogSite.Web.Areas.Admin.Models.AboutModel;
 using BlogSite.Web.Areas.Admin.Models.AdminPanelModel;
+using BlogSite.Web.Areas.Admin.Models.BlogModel;
+using BlogSite.Web.Areas.Admin.Models.CategoryModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +24,9 @@ namespace BlogSite.Web
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<APModel>();
+            builder.RegisterType<BlogModel>();
+            builder.RegisterType<CategoryModel>();
+            builder.RegisterType<AboutModel>();
             base.Load(builder);
         }
     }

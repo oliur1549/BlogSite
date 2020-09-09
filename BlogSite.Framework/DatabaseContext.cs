@@ -1,4 +1,5 @@
-﻿using BlogSite.Framework.BlogBS;
+﻿using BlogSite.Framework.AboutBS;
+using BlogSite.Framework.BlogBS;
 using BlogSite.Framework.CategoryBS;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -42,5 +43,6 @@ namespace BlogSite.Framework
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<Blog> Blogs{ get; set; }
+        public DbSet<About> Abouts{ get; set; }
     }
 }

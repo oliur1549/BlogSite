@@ -1,0 +1,31 @@
+﻿
+<div class="col-md-8">
+    @foreach (var item in ViewBag.Post)
+    {
+        <div class="card mb-4">
+            <img class="card-img-top" src="~/image/@item.Image" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">@item.Title</h2>
+                <p class="card-text">
+                    @item.Text.Substring(0, 200). . .
+                </p>
+                <a asp-controller="BlogPost" asp-action="Index" asp-route-id="@item.Id" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+                Posted on @item.datetime.ToString("MM/dd/yyyy") by
+                <a>Admin</a>
+            </div>
+        </div>
+        
+    }
+    @*<ul class="pagination justify-content-center mb-4">
+            <li class="page-item">
+                <a class="page-link" href="#">&larr; Older</a>
+            </li>
+            <li class="page-item disabled">
+                <a class="page-link" href="#">Newer &rarr;</a>
+            </li>
+        </ul>*@
+
+</div>
+

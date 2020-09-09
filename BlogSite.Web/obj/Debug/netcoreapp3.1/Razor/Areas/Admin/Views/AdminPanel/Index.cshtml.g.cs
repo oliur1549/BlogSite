@@ -40,8 +40,29 @@ using BlogSite.Web.Areas.Admin.Models.AdminPanelModel;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "E:\My Projects\BlogSite.Web\BlogSite.Web\Areas\Admin\Views\_ViewImports.cshtml"
+using BlogSite.Web.Areas.Admin.Models.CategoryModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "E:\My Projects\BlogSite.Web\BlogSite.Web\Areas\Admin\Views\_ViewImports.cshtml"
+using BlogSite.Web.Areas.Admin.Models.BlogModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "E:\My Projects\BlogSite.Web\BlogSite.Web\Areas\Admin\Views\_ViewImports.cshtml"
+using BlogSite.Web.Areas.Admin.Models.AboutModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f65ea45a0e442a35333d70dfe7c0c93148f80249", @"/Areas/Admin/Views/AdminPanel/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"03588c8cdd646168d59dad13d558454561d0468d", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d76a524bf25557121300c93b710832ebae9b221d", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_AdminPanel_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<APModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -88,7 +109,7 @@ using BlogSite.Web.Areas.Admin.Models.AdminPanelModel;
 #nullable disable
             DefineSection("PageStyles", async() => {
                 WriteLiteral("\r\n    <!-- DataTables -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f65ea45a0e442a35333d70dfe7c0c93148f802496767", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f65ea45a0e442a35333d70dfe7c0c93148f802497399", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -179,7 +200,7 @@ using BlogSite.Web.Areas.Admin.Models.AdminPanelModel;
             <div class=""modal-body"">
                 <p>Are you sure, you want to delete?</p>
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024910908", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024911540", async() => {
                 WriteLiteral("\r\n                    ");
 #nullable restore
 #line 83 "E:\My Projects\BlogSite.Web\BlogSite.Web\Areas\Admin\Views\AdminPanel\Index.cshtml"
@@ -223,7 +244,7 @@ using BlogSite.Web.Areas.Admin.Models.AdminPanelModel;
 ");
             DefineSection("PageScripts", async() => {
                 WriteLiteral("\r\n    <!-- DataTables -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024913571", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024914203", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -237,7 +258,7 @@ using BlogSite.Web.Areas.Admin.Models.AdminPanelModel;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024914671", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024915303", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

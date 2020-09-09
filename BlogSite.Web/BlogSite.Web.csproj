@@ -15,16 +15,18 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="ReflectionIT.Mvc.Paging" Version="4.0.0" />
     <PackageReference Include="Serilog" Version="2.9.0" />
     <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Models\Category\" />
+    <Folder Include="Areas\Identities\Data\" />
     <Folder Include="Logs\" />
     <Folder Include="wwwroot\admin\" />
     <Folder Include="wwwroot\image\" />
+    <Folder Include="wwwroot\about\" />
   </ItemGroup>
 
   <ItemGroup>

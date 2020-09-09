@@ -60,6 +60,39 @@ namespace BlogSite.Web.Areas.Admin.Models
                                 new MenuChildItem{ Title = "Create Admin", Url = "/Admin/AdminPanel/AddAdmin" },
                             }
                         }
+                    },
+                    {
+                        new MenuItem
+                        {
+                            Title = "Category",
+                            Childs = new List<MenuChildItem>
+                            {
+                                new MenuChildItem{ Title = "View", Url = "/Admin/Category/Index" },
+                                new MenuChildItem{ Title = "Create", Url = "/Admin/Category/AddCategory" },
+                            }
+                        }
+                    },
+                    {
+                        new MenuItem
+                        {
+                            Title = "Blog",
+                            Childs = new List<MenuChildItem>
+                            {
+                                new MenuChildItem{ Title = "View", Url = "/Admin/Blog/Index" },
+                                new MenuChildItem{ Title = "Create", Url = "/Admin/Blog/addblog" },
+                            }
+                        }
+                    },
+                    {
+                        new MenuItem
+                        {
+                            Title = "About",
+                            Childs = new List<MenuChildItem>
+                            {
+                                new MenuChildItem{ Title = "View", Url = "/Admin/About/Index" },
+                                new MenuChildItem{ Title = "Create", Url = "/Admin/About/addabout" },
+                            }
+                        }
                     }
                 }
             };

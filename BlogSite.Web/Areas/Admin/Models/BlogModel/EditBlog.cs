@@ -2,6 +2,7 @@
 using BlogSite.Framework.BlogBS;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -16,13 +17,12 @@ namespace BlogSite.Web.Areas.Admin.Models.BlogModel
         public EditBlog(IBlogService blogService) : base(blogService) { }
         public EditBlog() { }
 
-
+        public int Id { get; set; }
         [Required]
+        [StringLength(30)]
         [Display(Name = "Title")]
         public string Title { get; set; }
         [Required]
-        [StringLength(30)]
-
         [Display(Name = "Text")]
         public string Text { get; set; }
 
@@ -31,11 +31,11 @@ namespace BlogSite.Web.Areas.Admin.Models.BlogModel
 
         public string Image { get; set; }
         public int CategoryId { get; set; }
-
+        [Required]
         public IFormFile imageFile { get; set; }
 
 
-        public void Create()
+        public void Edit()
         {
             var hostingEnvironment = Startup.AutofacContainer.Resolve<IWebHostEnvironment>();
 
@@ -50,14 +50,48 @@ namespace BlogSite.Web.Areas.Admin.Models.BlogModel
 
             var blog = new Blog
             {
+                Id=this.Id,
                 Title = this.Title,
                 Text = this.Text,
                 datetime = this.datetime,
-                Image = this.Image,
+                Image = fileName,
                 CategoryId = this.CategoryId
             };
 
             _blogService.Editblog(blog);
+        }
+
+        internal void Load(int id)
+        {
+            
+
+            var Blog = _blogService.Getblog(id);
+
+            if (Blog != null)
+            {
+                Id = Blog.Id;
+                Title = Blog.Title;
+                Text = Blog.Text;
+                datetime = Blog.datetime;
+                Image = Blog.Image;
+                CategoryId = Blog.CategoryId;
+
+            }
+        }
+        public IList<SelectListItem> GetCategoryList()
+        {
+            IList<SelectListItem> listItems = new List<SelectListItem>();
+
+            foreach (var item in _blogService.GetCategories())
+            {
+                var ctg = new SelectListItem
+                {
+                    Text = item.Name,
+                    Value = item.Id.ToString()
+                };
+                listItems.Add(ctg);
+            }
+            return listItems;
         }
     }
 }

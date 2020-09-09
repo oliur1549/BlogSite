@@ -40,8 +40,29 @@ using BlogSite.Web.Areas.Admin.Models.AdminPanelModel;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "E:\My Projects\BlogSite.Web\BlogSite.Web\Areas\Admin\Views\_ViewImports.cshtml"
+using BlogSite.Web.Areas.Admin.Models.CategoryModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "E:\My Projects\BlogSite.Web\BlogSite.Web\Areas\Admin\Views\_ViewImports.cshtml"
+using BlogSite.Web.Areas.Admin.Models.BlogModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "E:\My Projects\BlogSite.Web\BlogSite.Web\Areas\Admin\Views\_ViewImports.cshtml"
+using BlogSite.Web.Areas.Admin.Models.AboutModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Areas/Admin/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"03588c8cdd646168d59dad13d558454561d0468d", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d76a524bf25557121300c93b710832ebae9b221d", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

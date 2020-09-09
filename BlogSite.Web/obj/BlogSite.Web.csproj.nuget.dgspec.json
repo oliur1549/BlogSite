@@ -212,6 +212,10 @@
               "target": "Package",
               "version": "[3.1.4, )"
             },
+            "ReflectionIT.Mvc.Paging": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "Serilog": {
               "target": "Package",
               "version": "[2.9.0, )"

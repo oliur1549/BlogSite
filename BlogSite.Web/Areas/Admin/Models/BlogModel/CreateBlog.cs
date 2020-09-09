@@ -2,6 +2,7 @@
 using BlogSite.Framework.BlogBS;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -18,20 +19,20 @@ namespace BlogSite.Web.Areas.Admin.Models.BlogModel
 
 
         [Required]
+        [StringLength(30)]
         [Display(Name = "Title")]
         public string Title { get; set; }
         [Required]
-        [StringLength(30)]
-
         [Display(Name = "Text")]
         public string Text { get; set; }
 
         [Required]
         public DateTime datetime { get; set; }
-
+        
         public string Image { get; set; }
+        [Required]
         public int CategoryId { get; set; }
-
+        [Required]
         public IFormFile imageFile { get; set; }
 
 
@@ -53,11 +54,26 @@ namespace BlogSite.Web.Areas.Admin.Models.BlogModel
                 Title = this.Title,
                 Text = this.Text,
                 datetime = this.datetime,
-                Image = this.Image,
+                Image = fileName,
                 CategoryId = this.CategoryId
             };
 
             _blogService.Createblog(blog);
+        }
+        public IList<SelectListItem> GetCategoryList()
+        {
+            IList<SelectListItem> listItems = new List<SelectListItem>();
+
+            foreach (var item in _blogService.GetCategories())
+            {
+                var ctg = new SelectListItem
+                {
+                    Text = item.Name,
+                    Value = item.Id.ToString()
+                };
+                listItems.Add(ctg);
+            }
+            return listItems;
         }
     }
 }
