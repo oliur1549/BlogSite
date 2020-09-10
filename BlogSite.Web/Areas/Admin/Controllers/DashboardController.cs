@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BlogSite.Web.Areas.Admin.Models;
 using Membership.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +22,8 @@ namespace BlogSite.Web.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var model = new DashBoardModel();
+            return View(model);
         }
     }
 }

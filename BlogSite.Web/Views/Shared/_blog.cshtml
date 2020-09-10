@@ -1,0 +1,21 @@
+﻿<div class="col-md-8">
+    @foreach (var item in ViewBag.Post)
+    {
+        <div class="card mb-4">
+            <img class="card-img-top" src="~/image/@item.Image" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">@item.Title</h2>
+                <p class="card-text">
+                    @item.Text.Substring(0, 200). . .
+                </p>
+                <a href="#" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+                Posted on @item.datetime.ToString("MM/dd/yyyy") by
+                <a>Admin</a>
+            </div>
+        </div>
+
+    }
+
+</div>

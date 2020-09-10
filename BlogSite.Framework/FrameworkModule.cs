@@ -1,4 +1,8 @@
 ﻿using Autofac;
+using BlogSite.Framework.AboutBS;
+using BlogSite.Framework.AdminPanelBS;
+using BlogSite.Framework.BlogBS;
+using BlogSite.Framework.CategoryBS;
 using Membership.Data;
 using Membership.Services;
 
@@ -22,6 +26,23 @@ namespace BlogSite.Framework
                 .WithParameter("migrationAssemblyName", _migrationAssemblyName)
                 .InstancePerLifetimeScope();
 
+            builder.RegisterType<BlogUnitOfWork>().As<IBlogUnitOfWork>()
+               .InstancePerLifetimeScope();
+
+            builder.RegisterType<APService>().As<IAPService>()
+               .InstancePerLifetimeScope();
+
+            builder.RegisterType<CategoryRepository>().As<ICategoryRepository>()
+               .InstancePerLifetimeScope();
+
+            builder.RegisterType<CategoryService>().As<ICategoryService>()
+               .InstancePerLifetimeScope();
+
+            builder.RegisterType<BlogRepository>().As<IBlogRepository>()
+               .InstancePerLifetimeScope();
+
+            builder.RegisterType<BlogService>().As<IBlogService>()
+               .InstancePerLifetimeScope();
 
             builder.RegisterType<AccountSeed>()
                 .InstancePerLifetimeScope();
@@ -31,6 +52,13 @@ namespace BlogSite.Framework
 
             builder.RegisterType<CurrentUserService>().As<ICurrentUserService>()
              .InstancePerLifetimeScope();
+
+            builder.RegisterType<AboutRepository>().As<IAboutRepository>()
+             .InstancePerLifetimeScope();
+
+            builder.RegisterType<AboutService>().As<IAboutService>()
+             .InstancePerLifetimeScope();
+
             base.Load(builder);
         }
     }
