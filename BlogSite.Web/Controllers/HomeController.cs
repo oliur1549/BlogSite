@@ -29,8 +29,8 @@ namespace BlogSite.Web.Controllers
         {
             var post = _context.Blogs.OrderByDescending(d => d.datetime);
             ViewBag.Post = post;
-            var blog = _context.Blogs.Where(d => d.Id ==d.Id);
-            ViewBag.Blog = blog;
+            //var blog = _context.Blogs.Where(d => d.Id ==d.Id);
+            //ViewBag.Blog = blog;
             //var model = await PagingList<Blog>.CreateAsync(post, 10, page); 
             var category = _context.Categories.ToList();
             ViewBag.Category = category;

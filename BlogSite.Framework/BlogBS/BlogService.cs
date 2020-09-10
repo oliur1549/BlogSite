@@ -53,7 +53,7 @@ namespace BlogSite.Framework.BlogBS
 
         public (IList<Blog> records, int total, int totalDisplay) GetBlog(int pageIndex, int pageSize, string searchText, string sortText)
         {
-            var result = _blogUnitOfWork.BlogRepository.GetAll().ToList();
+            var result = _blogUnitOfWork.BlogRepository.GetAll();
             return (result, 0, 0);
         }
 
