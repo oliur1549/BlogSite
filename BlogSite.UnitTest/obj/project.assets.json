@@ -8089,11 +8089,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My Projects\\BlogSite.Web\\BlogSite.UnitTest\\BlogSite.UnitTest.csproj",
+      "projectUniqueName": "E:\\My Projects\\BlogSite\\BlogSite.UnitTest\\BlogSite.UnitTest.csproj",
       "projectName": "BlogSite.UnitTest",
-      "projectPath": "E:\\My Projects\\BlogSite.Web\\BlogSite.UnitTest\\BlogSite.UnitTest.csproj",
+      "projectPath": "E:\\My Projects\\BlogSite\\BlogSite.UnitTest\\BlogSite.UnitTest.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\My Projects\\BlogSite.Web\\BlogSite.UnitTest\\obj\\",
+      "outputPath": "E:\\My Projects\\BlogSite\\BlogSite.UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8109,8 +8109,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\My Projects\\BlogSite.Web\\BlogSite.Framework\\BlogSite.Framework.csproj": {
-              "projectPath": "E:\\My Projects\\BlogSite.Web\\BlogSite.Framework\\BlogSite.Framework.csproj"
+            "E:\\My Projects\\BlogSite\\BlogSite.Framework\\BlogSite.Framework.csproj": {
+              "projectPath": "E:\\My Projects\\BlogSite\\BlogSite.Framework\\BlogSite.Framework.csproj"
             }
           }
         }

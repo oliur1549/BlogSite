@@ -1,6 +1,7 @@
 ﻿using BlogSite.Framework.AboutBS;
 using BlogSite.Framework.BlogBS;
 using BlogSite.Framework.CategoryBS;
+using BlogSite.Framework.CommentBS;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -44,5 +45,7 @@ namespace BlogSite.Framework
         public DbSet<Category> Categories { get; set; }
         public DbSet<Blog> Blogs{ get; set; }
         public DbSet<About> Abouts{ get; set; }
+        public DbSet<MainComment> MainComments{ get; set; }
+        public DbSet<SubComment> SubComments{ get; set; }
     }
 }

@@ -6051,11 +6051,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My Projects\\BlogSite.Web\\BlogSite.Framework\\BlogSite.Framework.csproj",
+      "projectUniqueName": "E:\\My Projects\\BlogSite\\BlogSite.Framework\\BlogSite.Framework.csproj",
       "projectName": "BlogSite.Framework",
-      "projectPath": "E:\\My Projects\\BlogSite.Web\\BlogSite.Framework\\BlogSite.Framework.csproj",
+      "projectPath": "E:\\My Projects\\BlogSite\\BlogSite.Framework\\BlogSite.Framework.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\My Projects\\BlogSite.Web\\BlogSite.Framework\\obj\\",
+      "outputPath": "E:\\My Projects\\BlogSite\\BlogSite.Framework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6071,8 +6071,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\My Projects\\BlogSite.Web\\Membership\\Membership.csproj": {
-              "projectPath": "E:\\My Projects\\BlogSite.Web\\Membership\\Membership.csproj"
+            "E:\\My Projects\\BlogSite\\Membership\\Membership.csproj": {
+              "projectPath": "E:\\My Projects\\BlogSite\\Membership\\Membership.csproj"
             }
           }
         }

@@ -1,14 +1,13 @@
-﻿using System;
+﻿using BlogSite.Framework;
+using BlogSite.Framework.BlogBS;
+using BlogSite.Web.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using BlogSite.Web.Models;
-using BlogSite.Framework;
-using BlogSite.Framework.BlogBS;
-using ReflectionIT.Mvc.Paging;
 
 namespace BlogSite.Web.Controllers
 {
@@ -24,24 +23,60 @@ namespace BlogSite.Web.Controllers
             _blogUnitOfWork = blogUnitOfWork;
         }
 
-        
+
         public IActionResult Index()
         {
             var post = _context.Blogs.OrderByDescending(d => d.datetime);
             ViewBag.Post = post;
-            //var blog = _context.Blogs.Where(d => d.Id ==d.Id);
-            //ViewBag.Blog = blog;
-            //var model = await PagingList<Blog>.CreateAsync(post, 10, page); 
             var category = _context.Categories.ToList();
             ViewBag.Category = category;
             return View();
+
+        }
+        public IActionResult GetPost(int id)
+        {
+            var post = _context.Blogs
+                .Include(x => x.MainComments)
+                .ThenInclude(xy => xy.subComments)
+                .FirstOrDefault(p => p.Id == id);
+            ViewBag.Post = post;
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Comment(CreateCommentModel model)
+        {
+            if (!ModelState.IsValid)
+                return RedirectToAction("Blog", new { id = model.BlogId });
+            
+            if (model.MainCommentId>0)
+            {
+                try
+                {
+                    model.MCCreate();
+                    //model.Response = new ResponseModel("Insert Successfull", ResponseType.Success);
+                    return RedirectToAction("index");
+                }
+                //catch (DuplicationException message)
+                //{
+                //    model.Response = new ResponseModel(message.Message, ResponseType.Failure);
+                //}
+                catch (Exception ex)
+                {
+                    ViewBag.Message = "Error";
+                    // error logger code
+                }
+
+            }
+            else
+            {
+                model.SCCreate();
+                //model.Response = new ResponseModel("Insert Successfull", ResponseType.Success);
+                return RedirectToAction("index");
+            }
+            return View(model);
+
         }
 
-        //public (IList<Blog> records, int total, int totalDisplay) GetBlog(int pageIndex, int pageSize, string searchText, string sortText)
-        //{
-        //    var result = _blogUnitOfWork.BlogRepository.GetAll();
-        //    return (result, 0, 0);
-        //}
         public IActionResult Privacy()
         {
             return View();

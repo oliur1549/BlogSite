@@ -61,10 +61,16 @@ namespace BlogSite.Framework.BlogBS
         {
             return _blogUnitOfWork.BlogRepository.GetById(id);
         }
+        
 
         public IEnumerable<Category> GetCategories()
         {
             return _blogUnitOfWork.CategoryRepository.GetAll();
+        }
+
+        public Blog GetPost(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

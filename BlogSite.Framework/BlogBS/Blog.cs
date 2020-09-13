@@ -1,5 +1,6 @@
 ﻿using BlogSite.Data;
 using BlogSite.Framework.CategoryBS;
+using BlogSite.Framework.CommentBS;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,5 +16,6 @@ namespace BlogSite.Framework.BlogBS
         public string Image { get; set; }
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
+        public IList<MainComment> MainComments { get; set; }
     }
 }

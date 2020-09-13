@@ -2,9 +2,6 @@
 using BlogSite.Framework.AboutBS;
 using BlogSite.Framework.BlogBS;
 using BlogSite.Framework.CategoryBS;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BlogSite.Framework
 {
@@ -13,5 +10,7 @@ namespace BlogSite.Framework
         IBlogRepository BlogRepository { get; set; }
         ICategoryRepository CategoryRepository { get; set; }
         IAboutRepository AboutRepository { get; set; }
+        IMainCommentRepository MainCommentRepository { get; set; }
+        ISubCommentRepository SubCommentRepository { get; set; }
     }
 }

@@ -84,11 +84,73 @@ namespace BlogSite.Web.Migrations.Database
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("BlogSite.Framework.CommentBS.MainComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("BlogId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BlogId");
+
+                    b.ToTable("MainComments");
+                });
+
+            modelBuilder.Entity("BlogSite.Framework.CommentBS.SubComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("MainCommentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MainCommentId");
+
+                    b.ToTable("SubComments");
+                });
+
             modelBuilder.Entity("BlogSite.Framework.BlogBS.Blog", b =>
                 {
                     b.HasOne("BlogSite.Framework.CategoryBS.Category", "Category")
                         .WithMany("Blogs")
                         .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("BlogSite.Framework.CommentBS.MainComment", b =>
+                {
+                    b.HasOne("BlogSite.Framework.BlogBS.Blog", null)
+                        .WithMany("MainComments")
+                        .HasForeignKey("BlogId");
+                });
+
+            modelBuilder.Entity("BlogSite.Framework.CommentBS.SubComment", b =>
+                {
+                    b.HasOne("BlogSite.Framework.CommentBS.MainComment", null)
+                        .WithMany("subComments")
+                        .HasForeignKey("MainCommentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

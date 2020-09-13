@@ -1131,11 +1131,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\My Projects\\BlogSite.Web\\BlogSite.Data\\BlogSite.Data.csproj",
+      "projectUniqueName": "E:\\My Projects\\BlogSite\\BlogSite.Data\\BlogSite.Data.csproj",
       "projectName": "BlogSite.Data",
-      "projectPath": "E:\\My Projects\\BlogSite.Web\\BlogSite.Data\\BlogSite.Data.csproj",
+      "projectPath": "E:\\My Projects\\BlogSite\\BlogSite.Data\\BlogSite.Data.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\My Projects\\BlogSite.Web\\BlogSite.Data\\obj\\",
+      "outputPath": "E:\\My Projects\\BlogSite\\BlogSite.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

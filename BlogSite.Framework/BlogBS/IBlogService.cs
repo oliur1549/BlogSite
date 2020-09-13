@@ -16,5 +16,6 @@ namespace BlogSite.Framework.BlogBS
         Blog Getblog(int id);
         Blog Deleteblog(int id);
         IEnumerable<Category> GetCategories();
+        Blog GetPost(int id);
     }
 }

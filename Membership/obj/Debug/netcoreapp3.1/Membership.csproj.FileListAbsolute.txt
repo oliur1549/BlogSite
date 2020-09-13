@@ -10,3 +10,15 @@ E:\My Projects\BlogSite.Web\Membership\bin\Debug\netcoreapp3.1\Membership.pdb
 E:\My Projects\BlogSite.Web\Membership\obj\Debug\netcoreapp3.1\Membership.csproj.CoreCompileInputs.cache
 E:\My Projects\BlogSite.Web\Membership\obj\Debug\netcoreapp3.1\Membership.dll
 E:\My Projects\BlogSite.Web\Membership\obj\Debug\netcoreapp3.1\Membership.pdb
+E:\My Projects\BlogSite\Membership\bin\Debug\netcoreapp3.1\Membership.deps.json
+E:\My Projects\BlogSite\Membership\bin\Debug\netcoreapp3.1\Membership.dll
+E:\My Projects\BlogSite\Membership\bin\Debug\netcoreapp3.1\Membership.pdb
+E:\My Projects\BlogSite\Membership\bin\Debug\netcoreapp3.1\BlogSite.Data.dll
+E:\My Projects\BlogSite\Membership\bin\Debug\netcoreapp3.1\BlogSite.Data.pdb
+E:\My Projects\BlogSite\Membership\obj\Debug\netcoreapp3.1\Membership.csprojAssemblyReference.cache
+E:\My Projects\BlogSite\Membership\obj\Debug\netcoreapp3.1\Membership.AssemblyInfoInputs.cache
+E:\My Projects\BlogSite\Membership\obj\Debug\netcoreapp3.1\Membership.AssemblyInfo.cs
+E:\My Projects\BlogSite\Membership\obj\Debug\netcoreapp3.1\Membership.csproj.CoreCompileInputs.cache
+E:\My Projects\BlogSite\Membership\obj\Debug\netcoreapp3.1\Membership.csproj.CopyComplete
+E:\My Projects\BlogSite\Membership\obj\Debug\netcoreapp3.1\Membership.dll
+E:\My Projects\BlogSite\Membership\obj\Debug\netcoreapp3.1\Membership.pdb
