@@ -13,23 +13,17 @@ namespace BlogSite.Framework
         public IBlogRepository BlogRepository { get; set; }
         public ICategoryRepository CategoryRepository { get ; set; }
         public IAboutRepository AboutRepository { get; set; }
-        public IMainCommentRepository MainCommentRepository { get ; set ; }
-        public ISubCommentRepository SubCommentRepository { get ; set ; }
 
         public BlogUnitOfWork(DatabaseContext context,
             IBlogRepository blogRepository,
             ICategoryRepository categoryRepository,
-            IAboutRepository aboutRepository,
-            IMainCommentRepository mainCommentRepository,
-            ISubCommentRepository subCommentRepository
+            IAboutRepository aboutRepository
             )
             : base(context)
         {
             BlogRepository = blogRepository;
             CategoryRepository = categoryRepository;
             AboutRepository = aboutRepository;
-            MainCommentRepository = mainCommentRepository;
-            SubCommentRepository = subCommentRepository;
         }
     }
 }

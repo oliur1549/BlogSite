@@ -1,5 +1,6 @@
 ﻿using BlogSite.Framework;
 using BlogSite.Framework.BlogBS;
+using BlogSite.Framework.CommentBS;
 using BlogSite.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
+using cloudscribe.Pagination.Models;
 
 namespace BlogSite.Web.Controllers
 {
@@ -24,55 +27,81 @@ namespace BlogSite.Web.Controllers
         }
 
 
-        public IActionResult Index()
+        public IActionResult Index(/*string searchString,*/ int pageNumber=1, int pageSize=3)
         {
-            var post = _context.Blogs.OrderByDescending(d => d.datetime);
-            ViewBag.Post = post;
+            //ViewBag.CurrentFilter = searchString;
+            int ExcludeRecords = (pageSize * pageNumber) - pageSize;
+
+            var post = _context.Blogs.OrderByDescending(d => d.datetime)
+                                .Skip(ExcludeRecords)
+                                .Take(pageSize);
+
+            //var Post = from b in _context.Blogs.Include(m => m.Title).Include(m => m.Text)
+            //            select b;
+
+            //var PostCount = Post.Count();
+
+            //if (!String.IsNullOrEmpty(searchString))
+            //{
+            //    Post = Post.Where(b => b.Title.Contains(searchString));
+            //    PostCount = Post.Count();
+            //}
+
+            var result = new PagedResult<Blog>
+            {
+                Data = post.AsNoTracking().ToList(),
+                TotalItems = _context.Blogs.Count(),
+                PageNumber = pageNumber,
+                PageSize = pageSize
+            };
+            //var post = _context.Blogs.OrderByDescending(d => d.datetime);
+            //ViewBag.Post = post;
             var category = _context.Categories.ToList();
             ViewBag.Category = category;
-            return View();
+            return View(result);
 
         }
-        public IActionResult GetPost(int id)
+        public Blog GetPost(int id)
         {
-            var post = _context.Blogs
+            return  _context.Blogs
                 .Include(x => x.MainComments)
                 .ThenInclude(xy => xy.subComments)
                 .FirstOrDefault(p => p.Id == id);
-            ViewBag.Post = post;
-            return View();
+            
+            
         }
         [HttpPost]
-        public IActionResult Comment(CreateCommentModel model)
+        public async Task<IActionResult> Comment(CreateCommentModel model)
         {
             if (!ModelState.IsValid)
-                return RedirectToAction("Blog", new { id = model.BlogId });
-            
+                return View("Blog", new { id = model.BlogId });
+
+
+            var post = GetPost(model.BlogId);
             if (model.MainCommentId>0)
             {
-                try
-                {
-                    model.MCCreate();
-                    //model.Response = new ResponseModel("Insert Successfull", ResponseType.Success);
-                    return RedirectToAction("index");
-                }
-                //catch (DuplicationException message)
-                //{
-                //    model.Response = new ResponseModel(message.Message, ResponseType.Failure);
-                //}
-                catch (Exception ex)
-                {
-                    ViewBag.Message = "Error";
-                    // error logger code
-                }
 
+                post.MainComments = post.MainComments ??  new List<MainComment>();
+
+                post.MainComments.Add(new MainComment
+                {
+                    Message=model.Message,
+                    Created=DateTime.Now
+                });
+
+                _context.Update(post);
             }
             else
             {
-                model.SCCreate();
-                //model.Response = new ResponseModel("Insert Successfull", ResponseType.Success);
-                return RedirectToAction("index");
+                var comment = new SubComment
+                {
+                    MainCommentId = model.MainCommentId,
+                    Message = model.Message,
+                    Created = DateTime.Now
+                };
+                _context.Add(comment);
             }
+            await _context.SaveChangesAsync();
             return View(model);
 
         }

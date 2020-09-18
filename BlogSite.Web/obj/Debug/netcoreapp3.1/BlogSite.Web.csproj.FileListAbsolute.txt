@@ -373,9 +373,6 @@ E:\My Projects\BlogSite\BlogSite.Web\bin\Debug\netcoreapp3.1\BlogSite.Data.pdb
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.csprojAssemblyReference.cache
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.AssemblyInfoInputs.cache
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.AssemblyInfo.cs
-E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.csproj.CoreCompileInputs.cache
-E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cs
-E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cache
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.RazorAssemblyInfo.cache
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.RazorAssemblyInfo.cs
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.TagHelpers.input.cache
@@ -426,3 +423,10 @@ E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\staticwebassets\Blo
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.dll
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.pdb
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.genruntimeconfig.cache
+E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_comments.cshtml.g.cs
+E:\My Projects\BlogSite\BlogSite.Web\bin\Debug\netcoreapp3.1\cloudscribe.Pagination.Models.dll
+E:\My Projects\BlogSite\BlogSite.Web\bin\Debug\netcoreapp3.1\cloudscribe.Web.Pagination.dll
+E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.csproj.CoreCompileInputs.cache
+E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cs
+E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cache
+E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_search.cshtml.g.cs

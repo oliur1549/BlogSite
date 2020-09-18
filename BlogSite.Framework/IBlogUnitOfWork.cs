@@ -10,7 +10,5 @@ namespace BlogSite.Framework
         IBlogRepository BlogRepository { get; set; }
         ICategoryRepository CategoryRepository { get; set; }
         IAboutRepository AboutRepository { get; set; }
-        IMainCommentRepository MainCommentRepository { get; set; }
-        ISubCommentRepository SubCommentRepository { get; set; }
     }
 }

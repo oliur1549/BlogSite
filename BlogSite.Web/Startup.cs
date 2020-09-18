@@ -96,6 +96,7 @@ namespace BlogSite.Web
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
+            services.AddCloudscribePagination();
             services.AddMvc();
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();

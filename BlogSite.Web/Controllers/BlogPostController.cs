@@ -1,4 +1,4 @@
-﻿using System;
+﻿  using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
@@ -17,11 +17,10 @@ namespace BlogSite.Web.Controllers
         {
             _context = context;
         }
-        [Route("index/{id}")]
-        public IActionResult Index(int id)
+        
+        public IActionResult Index()
         {
-            var blog = _context.Blogs.Find(id);
-            ViewBag.Blog = blog;
+            //var post= _context.Blogs.
             return View();
         }
     }

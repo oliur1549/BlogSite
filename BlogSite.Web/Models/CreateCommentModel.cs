@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlogSite.Web.Models
 {
-    public class CreateCommentModel : CommentBaseModel
+    public class CreateCommentModel
     {
         public int BlogId { get; set; }
         public int MainCommentId { get; set; }
@@ -14,31 +14,31 @@ namespace BlogSite.Web.Models
         public DateTime Created { get; set; } = DateTime.Now;
 
 
-        public void MCCreate()
-        {
+        //public void MCCreate()
+        //{
 
-            var mainComment = new MainComment
-            {
-                Message = this.Message,
-                Created=this.Created,
+        //    var mainComment = new MainComment
+        //    {
+        //        Message = this.Message,
+        //        Created=this.Created,
 
-            };
+        //    };
 
-            _commentService.CreateMC(mainComment);
-        }
-        public void SCCreate()
-        {
+        //    _commentService.CreateMC(mainComment);
+        //}
+        //public void SCCreate()
+        //{
 
-            var subComment = new SubComment
-            {
-                MainCommentId=this.MainCommentId,
-                Message = this.Message,
-                Created = this.Created,
+        //    var subComment = new SubComment
+        //    {
+        //        MainCommentId=this.MainCommentId,
+        //        Message = this.Message,
+        //        Created = this.Created,
 
-            };
+        //    };
 
-            _commentService.CreateSC(subComment);
-        }
+        //    _commentService.CreateSC(subComment);
+        //}
 
 
 

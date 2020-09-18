@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BlogSite.Web.Areas.Admin.Models.CategoryModel
 {
-    public class CategoryModel : CommentBaseModel
+    public class CategoryModel : CategoryBaseModel
     {
         public CategoryModel(ICategoryService categoryService) : base(categoryService) { }
         public CategoryModel() : base() { }

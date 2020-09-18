@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace BlogSite.Web.Areas.Admin.Models.CategoryModel
 {
-    public class EditCategory : CommentBaseModel
+    public class EditCategory : CategoryBaseModel
     {
         public EditCategory(ICategoryService categoryService) : base(categoryService) { }
         public EditCategory() { }
@@ -31,7 +31,7 @@ namespace BlogSite.Web.Areas.Admin.Models.CategoryModel
                 Id = this.Id,
                 Name = this.Name
             };
-
+             
             _categoryService.EditCategory(category);
         }
 
