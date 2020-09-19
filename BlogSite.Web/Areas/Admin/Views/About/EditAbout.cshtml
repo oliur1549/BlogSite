@@ -3,6 +3,8 @@
     ViewData["Title"] = "EditAbout";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
+<script src="~/tinymce/tinymce.min.js"></script>
+<script>tinymce.init({ selector: "#Description" });</script>
 
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -40,7 +42,7 @@
                             <form asp-area="Admin" asp-controller="About" asp-action="AddAbout" method="post" enctype="multipart/form-data">
                                 <div class="card-body">
 
-                                    
+
                                     <div class="form-group">
                                         <label for="ServiceName">Title</label>
                                         <input type="text" class="form-control" asp-for="Title" placeholder="Enter Title">

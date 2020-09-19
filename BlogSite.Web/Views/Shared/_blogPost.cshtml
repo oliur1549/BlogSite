@@ -9,7 +9,8 @@
                 <p class="card-text">
                     @item.Text.Substring(0, 200). . .
                 </p>
-                <a class="btn btn-primary">Read More &rarr;</a>
+                <a asp-controller="BlogPost" asp-action="Index" asp-route-id="@item.Id" class="btn btn-primary">Read More &rarr;</a>
+                
             </div>
             <div class="card-footer text-muted">
                 Posted on @item.datetime.ToString("MM/dd/yyyy") by

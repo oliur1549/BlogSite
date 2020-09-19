@@ -18,10 +18,11 @@ namespace BlogSite.Web.Controllers
             _context = context;
         }
         
-        public IActionResult Index()
+        public IActionResult Index(int id)
         {
-            //var post= _context.Blogs.
-            return View();
+            var post = _context.Blogs.Find(id);
+            
+            return View(post);
         }
     }
 }
