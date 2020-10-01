@@ -3,6 +3,7 @@ using BlogSite.Framework.AboutBS;
 using BlogSite.Framework.AdminPanelBS;
 using BlogSite.Framework.BlogBS;
 using BlogSite.Framework.CategoryBS;
+using BlogSite.Framework.CommentBS;
 using Membership.Data;
 using Membership.Services;
 
@@ -57,6 +58,12 @@ namespace BlogSite.Framework
              .InstancePerLifetimeScope();
 
             builder.RegisterType<AboutService>().As<IAboutService>()
+             .InstancePerLifetimeScope();
+
+            builder.RegisterType<MainCommentRepository>().As<IMainCommentRepository>()
+             .InstancePerLifetimeScope();
+
+            builder.RegisterType<MainCommentService>().As<IMainCommentService>()
              .InstancePerLifetimeScope();
 
             base.Load(builder);

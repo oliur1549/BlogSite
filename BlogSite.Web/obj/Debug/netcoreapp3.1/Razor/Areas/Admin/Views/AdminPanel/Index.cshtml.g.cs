@@ -61,8 +61,15 @@ using BlogSite.Web.Areas.Admin.Models.AboutModel;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 8 "E:\My Projects\BlogSite\BlogSite.Web\Areas\Admin\Views\_ViewImports.cshtml"
+using BlogSite.Web.Areas.Admin.Models.CommentsModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f65ea45a0e442a35333d70dfe7c0c93148f80249", @"/Areas/Admin/Views/AdminPanel/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d76a524bf25557121300c93b710832ebae9b221d", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5304c102dd884779b70c79c7792f8a25564018ae", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_AdminPanel_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<APModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -109,7 +116,7 @@ using BlogSite.Web.Areas.Admin.Models.AboutModel;
 #nullable disable
             DefineSection("PageStyles", async() => {
                 WriteLiteral("\r\n    <!-- DataTables -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f65ea45a0e442a35333d70dfe7c0c93148f802497363", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f65ea45a0e442a35333d70dfe7c0c93148f802497572", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -200,7 +207,7 @@ using BlogSite.Web.Areas.Admin.Models.AboutModel;
             <div class=""modal-body"">
                 <p>Are you sure, you want to delete?</p>
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024911504", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024911713", async() => {
                 WriteLiteral("\r\n                    ");
 #nullable restore
 #line 83 "E:\My Projects\BlogSite\BlogSite.Web\Areas\Admin\Views\AdminPanel\Index.cshtml"
@@ -244,7 +251,7 @@ using BlogSite.Web.Areas.Admin.Models.AboutModel;
 ");
             DefineSection("PageScripts", async() => {
                 WriteLiteral("\r\n    <!-- DataTables -->\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024914163", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024914372", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -258,7 +265,7 @@ using BlogSite.Web.Areas.Admin.Models.AboutModel;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024915263", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f65ea45a0e442a35333d70dfe7c0c93148f8024915472", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

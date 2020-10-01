@@ -5,19 +5,19 @@ namespace BlogSite.Web.Models
 {
     public class CommentBaseModel 
     {
-        //protected readonly ICommentService _commentService;
+        protected readonly IMainCommentService _commentService;
 
-        //public CommentBaseModel(ICommentService commentService)
-        //{
-        //    _commentService = commentService;
-        //}
-        //public CommentBaseModel()
-        //{
-        //    _commentService = Startup.AutofacContainer.Resolve<ICommentService>();
-        //}
-        //public void Dispose()
-        //{
-        //    _commentService?.Dispose();
-        //}
+        public CommentBaseModel(IMainCommentService commentService)
+        {
+            _commentService = commentService;
+        }
+        public CommentBaseModel()
+        {
+            _commentService = Startup.AutofacContainer.Resolve<IMainCommentService>();
+        }
+        public void Dispose()
+        {
+            _commentService?.Dispose();
+        }
     }
 }

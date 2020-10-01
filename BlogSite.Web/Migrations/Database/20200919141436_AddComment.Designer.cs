@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogSite.Web.Migrations.Database
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20200910134235_AddComment")]
+    [Migration("20200919141436_AddComment")]
     partial class AddComment
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -93,7 +93,7 @@ namespace BlogSite.Web.Migrations.Database
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("BlogId")
+                    b.Property<int>("BlogId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("Created")
@@ -109,29 +109,6 @@ namespace BlogSite.Web.Migrations.Database
                     b.ToTable("MainComments");
                 });
 
-            modelBuilder.Entity("BlogSite.Framework.CommentBS.SubComment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("MainCommentId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MainCommentId");
-
-                    b.ToTable("SubComments");
-                });
-
             modelBuilder.Entity("BlogSite.Framework.BlogBS.Blog", b =>
                 {
                     b.HasOne("BlogSite.Framework.CategoryBS.Category", "Category")
@@ -143,16 +120,9 @@ namespace BlogSite.Web.Migrations.Database
 
             modelBuilder.Entity("BlogSite.Framework.CommentBS.MainComment", b =>
                 {
-                    b.HasOne("BlogSite.Framework.BlogBS.Blog", null)
+                    b.HasOne("BlogSite.Framework.BlogBS.Blog", "Blog")
                         .WithMany("MainComments")
-                        .HasForeignKey("BlogId");
-                });
-
-            modelBuilder.Entity("BlogSite.Framework.CommentBS.SubComment", b =>
-                {
-                    b.HasOne("BlogSite.Framework.CommentBS.MainComment", null)
-                        .WithMany("subComments")
-                        .HasForeignKey("MainCommentId")
+                        .HasForeignKey("BlogId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

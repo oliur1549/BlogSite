@@ -15,7 +15,7 @@ namespace BlogSite.Web.Migrations.Database
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Message = table.Column<string>(nullable: true),
                     Created = table.Column<DateTime>(nullable: false),
-                    BlogId = table.Column<int>(nullable: true)
+                    BlogId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -25,27 +25,6 @@ namespace BlogSite.Web.Migrations.Database
                         column: x => x.BlogId,
                         principalTable: "Blogs",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "SubComments",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Message = table.Column<string>(nullable: true),
-                    Created = table.Column<DateTime>(nullable: false),
-                    MainCommentId = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_SubComments", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_SubComments_MainComments_MainCommentId",
-                        column: x => x.MainCommentId,
-                        principalTable: "MainComments",
-                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -53,18 +32,10 @@ namespace BlogSite.Web.Migrations.Database
                 name: "IX_MainComments_BlogId",
                 table: "MainComments",
                 column: "BlogId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_SubComments_MainCommentId",
-                table: "SubComments",
-                column: "MainCommentId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "SubComments");
-
             migrationBuilder.DropTable(
                 name: "MainComments");
         }

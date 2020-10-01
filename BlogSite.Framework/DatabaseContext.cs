@@ -38,6 +38,12 @@ namespace BlogSite.Framework
                 .HasOne(p => p.Category)
                 .WithMany(i => i.Blogs)
                 .HasForeignKey(p => p.CategoryId);
+
+            builder.Entity<MainComment>()
+                .HasOne(p => p.Blog)
+                .WithMany(i => i.MainComments)
+                .HasForeignKey(p => p.BlogId);
+
             base.OnModelCreating(builder);
 
         }
@@ -46,6 +52,6 @@ namespace BlogSite.Framework
         public DbSet<Blog> Blogs{ get; set; }
         public DbSet<About> Abouts{ get; set; }
         public DbSet<MainComment> MainComments{ get; set; }
-        public DbSet<SubComment> SubComments{ get; set; }
+        //public DbSet<SubComment> SubComments{ get; set; }
     }
 }

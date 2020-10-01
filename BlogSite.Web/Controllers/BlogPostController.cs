@@ -1,11 +1,8 @@
-﻿  using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Linq.Dynamic.Core;
-using System.Threading.Tasks;
 using BlogSite.Framework;
+using BlogSite.Web.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient.Server;
 
 namespace BlogSite.Web.Controllers
 {
@@ -21,8 +18,16 @@ namespace BlogSite.Web.Controllers
         public IActionResult Index(int id)
         {
             var post = _context.Blogs.Find(id);
-            
+            var comment = _context.MainComments.Where(c => c.BlogId == id && c.Status==true);
+            ViewBag.Comment = comment;
             return View(post);
+        }
+        [HttpPost]
+        public IActionResult Comments(CreateCommentModel model)
+        {
+            
+            model.MCCreate();
+            return RedirectToAction("index", new { id = model.BlogsId });
         }
     }
 }

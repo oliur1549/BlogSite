@@ -3,6 +3,7 @@ using BlogSite.Web.Areas.Admin.Models.AboutModel;
 using BlogSite.Web.Areas.Admin.Models.AdminPanelModel;
 using BlogSite.Web.Areas.Admin.Models.BlogModel;
 using BlogSite.Web.Areas.Admin.Models.CategoryModel;
+using BlogSite.Web.Areas.Admin.Models.CommentsModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,7 @@ namespace BlogSite.Web
             builder.RegisterType<BlogModel>();
             builder.RegisterType<CategoryModel>();
             builder.RegisterType<AboutModel>();
+            builder.RegisterType<CommentsModel>();
             base.Load(builder);
         }
     }

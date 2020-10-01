@@ -1,25 +1,44 @@
 ﻿@model BlogSite.Framework.BlogBS.Blog
 
 <div class="col-md-8">
-    
+
     <div class="card mb-4">
-        <img class="card-img-top" src="~/image/@Model.Image" alt="Card image cap">
+        <img class="card-img-top" src="~/image/@Model.Image" width="750" height="300" alt="Card image cap">
         <div class="card-body">
             <h2 class="card-title">@Model.Title</h2>
             <p class="card-text">
-                @Model.Text
+                @Html.Raw(Model.Text)
             </p>
-            
+
         </div>
         <div class="card-footer text-muted">
-            Posted on @Model.datetime by
+            Posted on @Model.datetime.ToShortDateString() by
             <a>Admin</a>
         </div>
     </div>
-    
-    <input class="form-control form-control-sm" name="Text" type="text" placeholder="Type a comment">
 
-    @*<partial name="Comments"/>*@
 
+
+
+    @*<input class="form-control form-control-sm" name="@Model.Message" type="text" placeholder="Type a comment">
+        <partial name="_comments" model=""/>
+
+        @*<partial name="Comments"/>*@
+    <div class="comment">
+
+        @{
+            await Html.RenderPartialAsync("Comments", new CreateCommentModel { BlogsId = Model.Id });
+        }
+    </div>
+    <div class="card">
+        <h4 class="text-secondary">All Comments</h4>
+        @foreach (var item in ViewBag.Comment)
+        {
+            <div>
+                <span> @item.Message </span>
+                <hr class="bg-secondary" />
+            </div>
+        }
+    </div>
 </div>
 

@@ -429,4 +429,6 @@ E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.csproj
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cs
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\BlogSite.Web.MvcApplicationPartsAssemblyInfo.cache
 E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_search.cshtml.g.cs
-E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Views\BlogPost\Comments.cshtml.g.cs
+E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Comments.cshtml.g.cs
+E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Comments\Edit.cshtml.g.cs
+E:\My Projects\BlogSite\BlogSite.Web\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Comments\Index.cshtml.g.cs
